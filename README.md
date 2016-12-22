@@ -1,14 +1,15 @@
 
 # Drive and Arrive - Distracted Driver Detection
+![screenshot](figs/introduction.png)
 
 + Background: According to authorities, 1/5 car accidents are caused by distracted driving, causing 425,000 people injured and 3,000 people killed every year. Therefore, this project is aimed to enable dashboard cameras to automatically detect drivers engaging in distracted behaviors to avoid traffic accidents. Such kind of effort can not only protect driver's personal and property safety, but also bring benefits to insurance companies and governments.
 
 + Data description: The dataset was collected from a Kaggle competition: State Farm Distracted Driver Detection. It includes two files: imgs.zip, a zipped folder of all (train/test) images, and driver_imgs_list.csv, a list of training images, their subject (driver) id, and class id.
 
-+ Team members
-	+ team member 1 Yaqing Xie
-	+ team member 2 Yuhang Liu
-	+ team member 3 Jiaming Liu
++ Team 201612-42 members
+	+ team member 1: Yaqing Xie (yx2316)
+	+ team member 2: Yuhang Liu (yl3380)
+	+ team member 3: Jiaming Liu (jl4564)
 
 ## System Design and Methodology:  
 Drive and Arrive aims to detect driver distractions and give prompt alerts to correct people’s inappropriate driving behaviors. To guarantee the performance as well as the efficiency of the system, the following  methodologies are adopted:  
@@ -28,7 +29,7 @@ The interface allows user to provide photos for detection. Face recognition, fea
 The face recognition and feature extraction are implemented in Python because of the library dependency. Packages including Caffe and OpenCV are required for the system to function. 
 To improve the efficiency of the system, Spark is applied to enable fast large-scale data processing. Specifically, command spark-submit is called to run the python scripts.
 Model training/classification is developed in Python with Spark as well considering the unity of the system.
-+ 2. R Shiny
++ 2. R Shiny  
 The final web interface is implemented in R with Shiny. The server will call Spark and run the python scripts automatically once the photo captured is ready.
 
 ## Code and Report
