@@ -1,2 +1,1 @@
-# drive_and_arrive_distracted_driver_detection
-Team 201612-42
+The raw images used for model training can be downloaded from [Kaggle.com] (https://www.kaggle.com/c/state-farm-distracted-driver-detection/data)
