@@ -1,7 +1,7 @@
 
 # Drive and Arrive - Distracted Driver Detection
 
-![screenshot](figs/introduction.png)
+  <img src="figs/introduction.png" width="700"> <br />
 
 + Background: According to authorities, 1/5 car accidents are caused by distracted driving, causing 425,000 people injured and 3,000 people killed every year. Therefore, this project is aimed to enable dashboard cameras to automatically detect drivers engaging in distracted behaviors to avoid traffic accidents. Such kind of effort can not only protect driver's personal and property safety, but also bring benefits to insurance companies and governments.
 
