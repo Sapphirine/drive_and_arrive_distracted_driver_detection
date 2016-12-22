@@ -1,2 +1,2 @@
-The folder contains all basic data to be used in the system.  
-Due to the size limit of Github, feature7/8/9.csv, feature7/8/9_pca.csv and feature 7/8/9_pca_eigen.csv cannot be uploaded. To obtain these necessary files, please run the scripts in [folder lib] (./lib/).
+Since the system requires both R and Python, the easiest way of keeping consistency is to always output and read processded data.  
+This folder is designed to store all processed data and the files adopt the naming mechanism: *id_precedure*.
