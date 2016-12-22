@@ -1,5 +1,6 @@
 
 # Drive and Arrive - Distracted Driver Detection
+
 ![screenshot](figs/introduction.png)
 
 + Background: According to authorities, 1/5 car accidents are caused by distracted driving, causing 425,000 people injured and 3,000 people killed every year. Therefore, this project is aimed to enable dashboard cameras to automatically detect drivers engaging in distracted behaviors to avoid traffic accidents. Such kind of effort can not only protect driver's personal and property safety, but also bring benefits to insurance companies and governments.
@@ -13,6 +14,9 @@
 
 ## System Design and Methodology:  
 Drive and Arrive aims to detect driver distractions and give prompt alerts to correct people’s inappropriate driving behaviors. To guarantee the performance as well as the efficiency of the system, the following  methodologies are adopted:  
+
+![screenshot](figs/logic.png)
+
 + 1. Face recognition  
 Assume the camera captures the driver as frequently as once per second, the system will have to process a decent amount of photos and classify each of them to a specific behavior label. To avoid this computationally expensive situation,  the distraction detection algorithm will be triggered only after the face of the driver is recognized.
 + 2. Image Feature Extraction  
@@ -37,10 +41,21 @@ For the detail of face recognition, feature extraction, model training etc., ple
 All the code can be found in the [lib folder] (./lib).  
 The report, presentation and video introduction can be found in the [report folder] (./report).  
 
-
 ## Interface and Illustration:
+Once a photo captured by the camera is available, the app server will read the photo and then triggers Spark to run scripts of face recognition, feature extraction and behavior classification/distraction detection.
+![screenshot](figs/step1.png)
+In the example above, the system classifeid the driver as safe driving and therefore showed an encouraging message in blue.  
+If the driver is distracted, the system will look into his/her behavior and then display both a pop-up window and a red alert banner to correct the driver's manner.
+![screenshot](figs/step2.png)
 
-![screenshot](doc/cover/box_prediction_top.jpg)
-![screenshot](doc/cover/box_prediction_middle.jpg)
-![screenshot](doc/cover/box_prediction_bottom.jpg)
+## Repository Structure
+proj/
+├── data/ (raw data from Kaggle.com and the photo features extracted by our scripts)
+├── figs/ (figures necessary for the ReadMe file or the R shiny app)
+├── lib/ (all the code involved in this project)
+├── output/ (processed data for the app)
+├── raw_images/ (indicates where to download all the training photos)
+├── report/ (final report, presentation and video)
+└── test_images/ (some images used for app illustration)
+
 
