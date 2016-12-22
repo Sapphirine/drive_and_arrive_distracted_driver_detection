@@ -15,7 +15,7 @@
 ## System Design and Methodology:  
 Drive and Arrive aims to detect driver distractions and give prompt alerts to correct people’s inappropriate driving behaviors. To guarantee the performance as well as the efficiency of the system, the following  methodologies are adopted:  
 
-![screenshot](figs/logic.png)
+  <img src="figs/logic.png" width="500"> <br />
 
 + 1. Face recognition  
 Assume the camera captures the driver as frequently as once per second, the system will have to process a decent amount of photos and classify each of them to a specific behavior label. To avoid this computationally expensive situation,  the distraction detection algorithm will be triggered only after the face of the driver is recognized.
@@ -42,13 +42,17 @@ All the code can be found in the [lib folder] (./lib).
 The report, presentation and video introduction can be found in the [report folder] (./report).  
 
 ## Interface and Illustration:
-Once a photo captured by the camera is available, the app server will read the photo and then triggers Spark to run scripts of face recognition, feature extraction and behavior classification/distraction detection.
-![screenshot](figs/step1.png)
+Once a photo captured by the camera is available, the app server will read the photo and then triggers Spark to run scripts of face recognition, feature extraction and behavior classification/distraction detection.  
+
+  <img src="figs/step1.png" width="700"> <br />
+  
 In the example above, the system classifeid the driver as safe driving and therefore showed an encouraging message in blue.  
-If the driver is distracted, the system will look into his/her behavior and then display both a pop-up window and a red alert banner to correct the driver's manner.
-![screenshot](figs/step2.png)
+If the driver is distracted, the system will look into his/her behavior and then display both a pop-up window and a red alert banner to correct the driver's manner. 
+
+  <img src="figs/step2.png" width="700"> <br />
 
 ## Repository Structure
+```
 proj/
 ├── data/ (raw data from Kaggle.com and the photo features extracted by our scripts)
 ├── figs/ (figures necessary for the ReadMe file or the R shiny app)
@@ -57,5 +61,5 @@ proj/
 ├── raw_images/ (indicates where to download all the training photos)
 ├── report/ (final report, presentation and video)
 └── test_images/ (some images used for app illustration)
-
+```
 
