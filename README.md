@@ -1,20 +1,14 @@
 
-# ADS Final Project: Movie Poster Evaluator
+# Drive and Arrive - Distracted Driver Detection
 
-Term: Fall 2016
-![screenshot](doc/cover/cover.jpeg)
-+ [Data link](http://www.imdb.com/search/title?year=2014,2014&title_type=feature&sort=boxoffice_gross_us,desc&page=4&ref_=adv_prv)
-+ Data description: Our original data set includes original movie posters from imdb.com. Our processed data sets include deep features, detected face areas and face numbers, detected text areas, RGB features, etc.
-+ [Shiny App](lib) 
-	+ Since the app interacts with Python and Python packages, the app needs to be installed locally. Python, Caffe (extract deep features) and OpenCV (face/text detection) are required.
++ Backgroun: According to authorities, 1/5 car accidents are caused by distracted driving, causing 425,000 people injured and 3,000 people killed every year. Therefore, this project is aimed to enable dashboard cameras to automatically detect drivers engaging in distracted behaviors to avoid traffic accidents. Such kind of effort can not only protect driver's personal and property safety, but also bring benefits to insurance companies and governments.
+
++ Data description: The dataset was collected from a Kaggle competition: State Farm Distracted Driver Detection. It includes two files: imgs.zip, a zipped folder of all (train/test) images, and driver_imgs_list.csv, a list of training images, their subject (driver) id, and class id.
+
 + Team members
 	+ team member 1 Yaqing Xie
-	+ team member 2 Qing Yin
-	+ team member 3 Tian Sheng
-	+ team member 4 Sen Zhuang
-	+ team member 5 Yueqi Zhang
-+ Project title: Movie Poster Evaluator
-+ Project theme: Movie Poster Analysis: Genre Prediction & Face Detection & Text Detection & Color Detection
+	+ team member 2 Yuhang Liu
+	+ team member 3 Jiaming Liu
 
 ## Project summary: 
 + 1.Poster Exploration
